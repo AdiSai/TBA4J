@@ -1,4 +1,4 @@
-package com.adithyasairam.TheBlueAllianceModels;
+package com.adithyasairam.thebluealliance.models;
 
 /**
  * Created by AdiSai on 1/24/16.

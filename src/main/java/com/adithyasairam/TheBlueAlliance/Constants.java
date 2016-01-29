@@ -1,4 +1,4 @@
-package com.adithyasairam.TheBlueAlliance;
+package com.adithyasairam.thebluealliance;
 
 /**
  * Created by Adi on 7/20/2015.

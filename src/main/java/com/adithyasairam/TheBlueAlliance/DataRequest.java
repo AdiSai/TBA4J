@@ -1,4 +1,4 @@
-package com.adithyasairam.TheBlueAlliance;
+package com.adithyasairam.thebluealliance;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

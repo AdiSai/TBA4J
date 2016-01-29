@@ -91,6 +91,13 @@
   <property name="project.jdk.home" value="${jdk.home.1.7}"/>
   <property name="project.jdk.bin" value="${jdk.bin.1.7}"/>
   <property name="project.jdk.classpath" value="jdk.classpath.1.7"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.gson.classpath">
+    <pathelement location="${path.variable.maven_repository}/com/google/code/gson/gson/2.5/gson-2.5.jar"/>
+  </path>
   <!-- Register Custom Compiler Taskdefs -->
   <property name="javac2.home" value="${idea.home}/lib"/>
   <path id="javac2.classpath">
@@ -127,24 +134,24 @@
   
   <path id="thebluealliance.module.production.classpath">
     <path refid="${module.jdk.classpath.thebluealliance}"/>
-    <pathelement location="${basedir}/../libs/Utils-Fat.jar"/>
+    <path refid="library.gson.classpath"/>
   </path>
   
   <path id="thebluealliance.runtime.production.module.classpath">
     <pathelement location="${thebluealliance.output.dir}"/>
-    <pathelement location="${basedir}/../libs/Utils-Fat.jar"/>
+    <path refid="library.gson.classpath"/>
   </path>
   
   <path id="thebluealliance.module.classpath">
     <path refid="${module.jdk.classpath.thebluealliance}"/>
     <pathelement location="${thebluealliance.output.dir}"/>
-    <pathelement location="${basedir}/../libs/Utils-Fat.jar"/>
+    <path refid="library.gson.classpath"/>
   </path>
   
   <path id="thebluealliance.runtime.module.classpath">
     <pathelement location="${thebluealliance.testoutput.dir}"/>
     <pathelement location="${thebluealliance.output.dir}"/>
-    <pathelement location="${basedir}/../libs/Utils-Fat.jar"/>
+    <path refid="library.gson.classpath"/>
   </path>
   
   
@@ -210,7 +217,6 @@
     <mkdir dir="${artifact.temp.output.thebluealliance}"/>
     <jar destfile="${temp.jar.path.TheBlueAlliance.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
       <zipfileset dir="${thebluealliance.output.dir}"/>
-      <zipfileset src="${basedir}/../libs/Utils-Fat.jar"/>
     </jar>
     <copy file="${temp.jar.path.TheBlueAlliance.jar}" tofile="${artifact.temp.output.thebluealliance}/TheBlueAlliance.jar"/>
   </target>

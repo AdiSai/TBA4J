@@ -1,6 +1,6 @@
-package com.adithyasairam.TheBlueAlliance;
+package com.adithyasairam.thebluealliance;
 
-import com.adithyasairam.TheBlueAllianceModels.*;
+import com.adithyasairam.thebluealliance.models.*;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
