@@ -10,7 +10,7 @@ public class Award {
     public RecipientList[] recipient_list;
     public int year;
 
-    private static class RecipientList
+    public static class RecipientList
     {
         public int team_number;
         public Object awardee;

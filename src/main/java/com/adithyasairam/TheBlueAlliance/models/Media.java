@@ -8,7 +8,7 @@ public class Media {
     public String foreign_key;
     public Details details;
 
-    private static class Details
+    public static class Details
     {
         public String image_partial;
     }

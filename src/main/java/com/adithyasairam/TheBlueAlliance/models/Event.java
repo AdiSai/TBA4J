@@ -23,12 +23,12 @@ public class Event {
     public String start_date;
     public int event_type;
 
-    private static class Alliance {
+    public static class Alliance {
         public Object[] declines;
         public String[] picks;
     }
 
-    private static class Webcast
+    public static class Webcast
     {
         public String type;
         public String channel;

@@ -14,14 +14,14 @@ public class Match {
     public Alliance[] alliances;
     public String event_key;
 
-    private static class Alliance {
+    public static class Alliance {
         public int auto;
         public int foul;
         public int score;
         public String[] teams;
     }
 
-    private static class Video
+    public static class Video
     {
         public String type;
         public String key;
