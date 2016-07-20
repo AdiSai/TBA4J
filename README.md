@@ -2,8 +2,6 @@
 The Blue Alliance APIs for Java
 
 Don't forget to add these dependences for the app to work:
-
-    compile 'com.google.code.gson:gson:2.7'
-    compile 'com.squareup.retrofit2:retrofit:2.1.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
-
+compile 'com.google.code.gson:gson:2.7'
+compile 'com.squareup.retrofit2:retrofit:2.1.0'
+compile 'com.squareup.retrofit2:converter-gson:2.1.0'
