@@ -2,7 +2,7 @@
   <artifact type="jar" name="TBA4J">
     <output-path>$PROJECT_DIR$/out/artifacts/TBA4J</output-path>
     <root id="archive" name="TBA4J.jar">
-      <element id="module-output" name="TBA4J_main" />
+      <element id="module-output" name="TBA4J" />
     </root>
   </artifact>
 </component>
