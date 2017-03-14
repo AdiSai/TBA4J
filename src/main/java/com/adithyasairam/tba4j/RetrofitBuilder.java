@@ -3,7 +3,6 @@ package com.adithyasairam.tba4j;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Created by AdiSai on 7/19/16.
@@ -16,9 +15,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
                 .create();
         return new Retrofit.Builder()
                 .baseUrl(Constants.TBA_URL)
-                .addConverterFactory(GsonConverterFactory.create(gson))
+                /* .addConverterFactory(GsonConverterFactory.create(gson)) */
                 .build();
-
     }
 
 }
